@@ -19,7 +19,11 @@ class Budget_Controller extends CI_Controller {
 	 */
 	public function index()
 	{
-		$this->load->view('budget_index');
+            $this->load->view('/templates/standard_header');
+            $this->load->view('budget_index');
+            $this->load->view('/templates/standard_footer');
+             
+            //$this->load->view('bootstrap');
 	}
 }
 
